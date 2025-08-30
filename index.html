@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Malik Khan Design — Interior Design Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-bar">
+    <a class="logo" href="index.html">Malik<span>Khan</span>Design</a>
+    <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Spaces that feel like <em>you</em></h1>
+      <p>Residential & small commercial interiors. Consultation, concept, sourcing, and styling — Adelaide & beyond.</p>
+      <a class="btn primary" href="contact.html">Request a Consultation</a>
+    </div>
+  </section>
+
+  <section class="container split">
+    <div>
+      <h2>Featured Projects</h2>
+      <p>A quick look at recent work. Filter by project type.</p>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="residential">Residential</button>
+        <button class="chip" data-filter="commercial">Commercial</button>
+        <button class="chip" data-filter="hospitality">Hospitality</button>
+      </div>
+
+      <div class="grid gallery" id="projectGallery">
+        <article class="card" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop" alt="Warm living room">
+          <div class="card-body"><h3>Parkside Living</h3><p>Soft textures, layered lighting, calm neutrals.</p></div>
+        </article>
+        <article class="card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1200&auto=format&fit=crop" alt="Modern office">
+          <div class="card-body"><h3>Studio Office</h3><p>Open plan with focus rooms and acoustic panels.</p></div>
+        </article>
+        <article class="card" data-category="hospitality">
+          <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop" alt="Cafe interior">
+          <div class="card-body"><h3>City Café</h3><p>Light timber, greenery, and warm pendants.</p></div>
+        </article>
+        <article class="card" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1200&auto=format&fit=crop" alt="Kitchen renovation">
+          <div class="card-body"><h3>Kitchen Refresh</h3><p>Matte cabinetry and quartz benchtops.</p></div>
+        </article>
+      </div>
+    </div>
+
+    <aside>
+      <h2>What clients say</h2>
+      <blockquote id="testimonial">
+        “Malik transformed our apartment — it finally feels like home.”
+        <footer>— S. Khalid</footer>
+      </blockquote>
+      <div class="controls">
+        <button class="btn sm" data-testimonial="prev">Prev</button>
+        <button class="btn sm" data-testimonial="next">Next</button>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Contact</h4>
+      <p>Adelaide CBD — by appointment<br><a href="mailto:hello@malikkhan.design">hello@malikkhan.design</a></p>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <p><a href="#">Instagram</a> · <a href="#">Pinterest</a> · <a href="#">LinkedIn</a></p>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <form id="newsletterForm" novalidate>
+        <label class="sr-only" for="newsEmail">Email</label>
+        <input id="newsEmail" type="email" placeholder="you@example.com" required>
+        <button class="btn sm" type="submit">Join</button>
+        <p class="form-msg" id="newsMsg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+  <p class="tiny">© <span id="year"></span> Malik Khan Design</p>
+</footer>
+</body>
+</html>
